@@ -23,7 +23,7 @@ let arr1: (number | string)[] = [1, 'aa', 5]
 
 
 
-let arr2: (number | string)[] = [1, 'aa', 5, 'cc', true]
+// let arr2: (number | string)[] = [1, 'aa', 5, 'cc', true]
 
 
 // 不添加小括号 ，表示：arr3 既可以是 number类型，又可以是 string[]
