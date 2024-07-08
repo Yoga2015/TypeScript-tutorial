@@ -9,8 +9,7 @@ interface Person7 {
   sex: string
 }
 
-// 接口：支持声明合并，即当 多个接口 具有相同的名称 时，它们会被合并成一个接口。
-// TS 底层偷偷帮你合并了.
+// 接口：支持声明合并，即当 多个接口 具有相同的名称 时，TS 底层 会将 它们 合并成一个接口（底层偷偷帮你合并了）
 
 let IPerson2: Person7 = {
   name: 'walking',
@@ -27,9 +26,9 @@ type Person5 = {
   sayHi(): void
 }
 
-// type Person5 = {
-//   sex: string
-// }
+type Person5 = {
+  sex: string
+}
 
 // 类型别名：不支持声明合并。如果尝试为同一个类型别名声明多个类型，TypeScript 会报错。
 
