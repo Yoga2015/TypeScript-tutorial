@@ -19,4 +19,8 @@ const tp = new TPerson(18, '男')
 
 console.log(tp.age, tp.gender);
 
+tp.age = 22
+
+console.log(tp.age);
+
 // 注意：不要手动 给 构造函数 指定 返回值类型 

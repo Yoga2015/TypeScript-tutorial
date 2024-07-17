@@ -1,6 +1,7 @@
 // 类的继承： 通过 implements 关键字 让 class 实现 接口。 （实现接口）
 
 interface Singable {
+  // name: string
   sing(): void
   // call():void
 }
@@ -12,7 +13,8 @@ class Person implements Singable {
 }
 
 // Person类 实现接口 Singable 意味着，Person类中 必须提供 Singable接口中 指定的 所有属性 和 方法，否则报错：
-//  Property 'sing' is missing in type 'Person' but required in type 'Singable'.
+//  Class 'Person' incorrectly implements interface 'Singable'.
+// Property 'name' is missing in type 'Person' but required in type 'Singable'.
 
 
 // 实现一个接口，意味着，必须要让 这个类 去实现 这个接口中 提供的 所有属性 和 方法，
