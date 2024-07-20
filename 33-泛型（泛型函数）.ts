@@ -24,3 +24,17 @@ const str1 = id('cc')
 const str2 = id<number>(26)
 
 // 注意： 当编 译器 无法推断类型 或 推断的类型不准确 时，就需要 显式地传入 类型参数。
+
+
+
+// function createArray(length: number, value: any): Array<any> {
+//   let result: any = [];
+//   for (let i = 0; i < length; i++) {
+//     result[i] = value
+//   };
+//   return result;
+// }
+
+// const c1 = createArray(6, 'y');   // [ 'y', 'y', 'y', 'y', 'y', 'y' ]
+
+// console.log(c1);
