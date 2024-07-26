@@ -1,4 +1,5 @@
 import axios from 'axios'
+import _ from 'lodash'
 
 axios({
   url: '',
@@ -17,3 +18,4 @@ document.querySelector
 window
 
 // 第三方库的类型声明文件
+_.forEach
