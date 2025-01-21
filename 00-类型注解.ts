@@ -30,7 +30,7 @@ function alertName(): void {
 let age: number = 20
 
 // Sage 的 类型 上面设置了 number, 在以后 使用过程中 Sage 的值 只能是 数字
-age = '二十';    // 此行代码会报错，因为 变量 Sage 的类型是 number, 不能赋值字符串；如果此处还没报错，tsc去编译时也会报错！
+// age = '二十';    // 报错，不能将类型“string" 分配给类型“number"； 如果此处还没报错，tsc去编译时也会报错！
 
 console.log(age);
 
