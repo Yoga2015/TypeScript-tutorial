@@ -2,8 +2,10 @@
 
 // 类型注解的作用 ： 为 变量 添加 类型约束，约定了什么类型，就只能给 变量 赋值该类型的值，否则，就会报错！
 
+// 为 变量 指定类型后，当为 变量 赋值时，TS编译器 会自动检查 值 是否符合 类型声明，符合 则赋值，否则报错
 
-// 原始数据类型 在 TypeScript 中的应用:
+
+// 原始数据类型（基本数据类型） 在 TypeScript 中的应用:
 
 let Sname: string = 'lisi'
 
@@ -30,7 +32,7 @@ function alertName(): void {
 let age: number = 20
 
 // Sage 的 类型 上面设置了 number, 在以后 使用过程中 Sage 的值 只能是 数字
-// age = '二十';    // 报错，不能将类型“string" 分配给类型“number"； 如果此处还没报错，tsc去编译时也会报错！
+// age = '二十';    // 这行代码会报错，不能将类型“string" 分配给类型“number"； 如果此处还没报错，tsc去编译时也会报错！
 
 console.log(age);
 
