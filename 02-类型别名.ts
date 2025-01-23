@@ -6,7 +6,7 @@ let arr: (number | string)[] = ['a', 1, 5, 'b']
 
 // 改造上面：
 
-type CustomArray = (number | string)[]
+type CustomArray = (number | string | boolean)[]
 
 let arr6: CustomArray = ['c', 4, 6, 'h']
 
