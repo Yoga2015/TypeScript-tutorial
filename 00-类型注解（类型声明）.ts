@@ -5,7 +5,7 @@
 // 为 变量 指定类型后，当为 变量 赋值时，TS编译器 会自动检查 值 是否符合 类型声明，符合 则赋值，否则报错
 
 
-// 原始数据类型（基本数据类型） 在 TypeScript 中的应用:
+// 1、原始数据类型（基本数据类型）
 
 let Sname: string = 'lisi'
 
@@ -13,22 +13,46 @@ let isLoading: boolean = false
 
 let weight: number = 120
 
-let a: null = null
+let null2: null = null
 
-let b: undefined = undefined
+let undefined2: undefined = undefined
 
-let c: symbol = Symbol()
+let symbol2: symbol = Symbol()
 
 
-// 空值
-// JavaScript 没有空值（Void）的概念，在 TypeScript 中，可以用 void 表示没有任何返回值的函数：
+// 2、对象类型  object （包括：数组、对象、函数 等 对象）
+
+// 在 TS 中 对于 对象类型 来说的话，那么 每个类型做了更加细化的处理，就是 每个 具体 的 对象 都有自己 的 类型语法。
+
+
+//  数组类型 的 两种写法 （ 推荐 使用 number[] 写法 ）
+
+// Array < number > 写法， 不推荐
+// let d: Array<number> = [6, 19, 12];
+// let string2: Array<string> = ['a', 'bb', '小河']
+
+// number[] 写法  推荐
+let e: number[] = [6, 19, 12];      //  变量e 的类型 是 number类型的数组, 赋值时只能赋值 number类型
+
+let number1: number[] = [1, 3, 25]
+
+let string1: string[] = ['lisi', '小红', 'KK']
+
+let boolean1: boolean[] = [true, false, false]
+
+let null3: null[] = [null, null, null]
+
+let undefined3: undefined[] = [undefined, undefined]
+
+
+//  Void 空值 ，首先 JavaScript 没有空值（Void）的概念，在 TypeScript 中，可以用 void 表示 没有任何返回值 的 函数：
 function alertName(): void {
 
   alert('My name is Tom');
 
 }
 
-// 声明一个变量 Sage, 同时指定它的类型 为 number ,并赋值
+// 声明一个变量 Sage, 同时指定它的类型 为 number ,并赋值20
 let age: number = 20
 
 // Sage 的 类型 上面设置了 number, 在以后 使用过程中 Sage 的值 只能是 数字
