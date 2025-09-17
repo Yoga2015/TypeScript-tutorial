@@ -42,7 +42,7 @@ interface A {
 }
 
 interface B extends A {
-  fn: (value: string) => string
+  fn: (value: number) => string
 }
 
 // 接口继承 会 报错 ，因为 类型不兼容 ：Interface 'B' incorrectly extends interface 'A'.
