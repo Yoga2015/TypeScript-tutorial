@@ -24,7 +24,7 @@ type TypeI = TypeF['c']    // type TypeI = string
 type TypeJ = { a: string; b: number; c: string; d: number }
 
 // （1）使用 字符串字面量的联合类型 获取 属性 c 和 d 对应的 类型，结果为  string | number
-type TypeK = TypeC['c' | 'd']    // type TypeD = string | number
+type TypeK = TypeJ['c' | 'd']    // type TypeK = string | number
 
 // (2) 使用 keyof 操作符 获取 TypeC 中 所有键对应的类型，结果为：string | number
-type TypeL = TypeC[keyof TypeC]    // type TypeE =  string | number
+type TypeL = TypeF[keyof TypeF]    // type TypeE =  string | number
